@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+    docker:
+      - image: cibuilds/hugo:0.40.1
+
+    working_directory: /hugo
+    steps:
+      - run:
+          name: Update enviroment
+          command: apk update && apk add git
+      - checkout
+      - run:
+          name: Building blog pages
+          command: hugo -v
+      - add_ssh_keys:
+          fingerprints:
+            - "17:1d:81:1d:40:36:48:57:04:13:4f:50:bb:3c:77:0f"
+      - deploy:
+          name: Deploy to GitHub Pages
+          command: ./.circleci/deploy.sh
