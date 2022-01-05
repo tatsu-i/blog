@@ -6,6 +6,7 @@ jobs:
         - master
     docker:
       - image: cibuilds/hugo:latest
+        user: root
 
     working_directory: /hugo
     steps:
