@@ -18,7 +18,7 @@ jobs:
           command: hugo -v
       - add_ssh_keys:
           fingerprints:
-            - "17:1d:81:1d:40:36:48:57:04:13:4f:50:bb:3c:77:0f"
+            - "d2:e3:99:d9:b4:3a:a2:ea:b8:1c:46:0c:37:f8:c6:a0"
       - deploy:
           name: Deploy to GitHub Pages
           command: ./.circleci/deploy.sh
