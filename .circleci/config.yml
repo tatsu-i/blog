@@ -5,7 +5,7 @@ jobs:
       only:
         - master
     docker:
-      - image: cibuilds/hugo:0.40.1
+      - image: cibuilds/hugo:latest
 
     working_directory: /hugo
     steps:
