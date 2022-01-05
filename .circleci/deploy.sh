@@ -12,7 +12,7 @@ git clone git@github.com:tatsu-i/tatsu-i.github.io.git deploy
 
 # rsyncでhugoで生成したHTMLをコピー
 rsync -arv --delete public/* ./deploy/
-cp ./CNAME ./deploy/
+#cp ./CNAME ./deploy/
 cd ./deploy
 
 git add -f .
