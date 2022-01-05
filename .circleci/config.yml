@@ -10,9 +10,6 @@ jobs:
 
     working_directory: /hugo
     steps:
-      - run:
-          name: Update enviroment
-          command: apk update && apk add git
       - checkout
       - run:
           name: Building blog pages
