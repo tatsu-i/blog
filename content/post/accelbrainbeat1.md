@@ -30,7 +30,7 @@ metaAlignment: center
 * [Muse2](https://choosemuse.com/muse-2/)
 * [Mind Monitor](https://mind-monitor.com/)
 
-![](img/sensor.png)
+![sensor](https://www.researchgate.net/profile/Ran-Liu-48/publication/338967157/figure/fig1/AS:865300069228544@1583315021343/Muse-TM-used-for-EEG-recording-a-Locations-of-electrodes-in-the-Muse-b-Top-down.png)
 
 <!--more-->
 
